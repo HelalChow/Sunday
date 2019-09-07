@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BFD291B2323D19F002B202D /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD291A2323D19F002B202D /* EventsViewCell.swift */; };
+		1BFD291D2323D8CE002B202D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD291C2323D8CE002B202D /* Event.swift */; };
 		7CD309412323A08500730F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD309402323A08500730F8C /* AppDelegate.swift */; };
 		7CD309462323A08500730F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD309442323A08500730F8C /* Main.storyboard */; };
 		7CD309482323A08700730F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD309472323A08700730F8C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BFD291A2323D19F002B202D /* EventsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
+		1BFD291C2323D8CE002B202D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7CD3093D2323A08500730F8C /* hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD309402323A08500730F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD309452323A08500730F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				7CD309442323A08500730F8C /* Main.storyboard */,
 				7CD309522323A24F00730F8C /* MapViewController.swift */,
 				7CD309542323A25A00730F8C /* ProfileViewController.swift */,
+				1BFD291A2323D19F002B202D /* EventsViewCell.swift */,
+				1BFD291C2323D8CE002B202D /* Event.swift */,
 				7CD309472323A08700730F8C /* Assets.xcassets */,
 				7CD309492323A08700730F8C /* LaunchScreen.storyboard */,
 				7CD3094C2323A08700730F8C /* Info.plist */,
@@ -141,6 +147,8 @@
 				7CD309552323A25A00730F8C /* ProfileViewController.swift in Sources */,
 				7CD309412323A08500730F8C /* AppDelegate.swift in Sources */,
 				7CD309532323A24F00730F8C /* MapViewController.swift in Sources */,
+				1BFD291B2323D19F002B202D /* EventsViewCell.swift in Sources */,
+				1BFD291D2323D8CE002B202D /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
