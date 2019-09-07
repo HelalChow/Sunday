@@ -6,6 +6,8 @@
 
 
 ## [Video Walkthrough](https://drive.google.com/file/d/13j-njRUl-L3E42kVws_tj-nIkqRfXo3k/view)
+![g1](d1.gif)
+![g1](d2.gif)
 
 
 
