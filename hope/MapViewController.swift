@@ -18,17 +18,19 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
+        mapView.delegate = self
         userLocationSetup()
     }
     
     func userLocationSetup(){
-        locationManager.delegate = self
-        mapView.delegate = self
+        
         
         locationManager.requestAlwaysAuthorization() //we can ask this later
         locationManager.startUpdatingLocation()
         locationManager.distanceFilter = 100
         mapView.showsUserLocation = true
+        mapView.mapType = MKMapType.hybrid
     }
 
     func zoomIn(_ coordinate: CLLocationCoordinate2D){

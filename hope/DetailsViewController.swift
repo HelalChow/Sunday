@@ -14,7 +14,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = title
+//        label.text = title
 
         // Do any additional setup after loading the view.
     }
