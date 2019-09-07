@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FlyoverKit
 
 class MapViewController: UIViewController {
 
@@ -21,7 +22,22 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         mapView.delegate = self
         userLocationSetup()
+        self.mapSetup()
     }
+    func mapSetup() {
+        self.mapView.mapType = .hybridFlyover
+        self.mapView.showsBuildings = true
+        self.mapView.isZoomEnabled = true
+        self.mapView.isScrollEnabled = true
+        
+        let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 40000, pitch: 45.0, headingStep: 40.0))
+        camera.start(flyover: FlyoverAwesomePlace.newYork)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(100), execute:{
+            camera.stop()
+        })
+    }
+    
+    
     
     func userLocationSetup(){
         
@@ -41,23 +57,33 @@ class MapViewController: UIViewController {
     func addAnnotations(){
         
         let timesSqaureAnnotation = MKPointAnnotation()
-        timesSqaureAnnotation.title = "times sq"
+        timesSqaureAnnotation.title = "9/11 Day of Service"
         timesSqaureAnnotation.subtitle = "This is some mor edeatails..."
         timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.758896, longitude: -73.9855)
 //        timesSqaureAnnotation
 //        timesSqaureAnnotation.canShowCall
         
         let empireStateAnnotation = MKPointAnnotation()
-        empireStateAnnotation.title = "empire state"
+        empireStateAnnotation.title = "Food Pantry Delivery"
         empireStateAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
         
         let brooklynBridge = MKPointAnnotation()
-        brooklynBridge.title = "bkln bridge"
+        brooklynBridge.title = "Hurricane Dorian Clothing Drive"
         brooklynBridge.coordinate = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        
+        let prospectPark = MKPointAnnotation()
+        prospectPark.title = "Hurricane Dorian Clothing Drive"
+        prospectPark.coordinate = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
+        
+        let jersey = MKPointAnnotation()
+        jersey.title = "It's My Park"
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
         
         mapView.addAnnotation(timesSqaureAnnotation)
         mapView.addAnnotation(empireStateAnnotation)
         mapView.addAnnotation(brooklynBridge)
+        mapView.addAnnotation(prospectPark)
+        mapView.addAnnotation(jersey)
     }
 
 }
@@ -120,6 +146,7 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+        self.mapView.showsUserLocation = true
         guard let latestLocation = locations.first else { return }
         
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
