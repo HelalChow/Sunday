@@ -1,8 +1,11 @@
 # Sunday
 
-**About:** Connect NGO w young volunteers that want to make a differnce crunched on time.
+**About:** An iOS app that connects NGO w young volunteers that want to make a differnce crunched on time.
 
-**Built With:** Swift, Xcode, Zeplin, Google Cloud Firebase
+**Built With:** Swift, Xcode, Zeplin, Google Cloud using MVC Software Pattern 
+
+**Frameworks:** UIKit, MapKit, CoreLocation, FlyoverKit, UserNotifications, EventKit, Contacts
+
 
 
 ## [Video Walkthrough](https://drive.google.com/file/d/13j-njRUl-L3E42kVws_tj-nIkqRfXo3k/view)
@@ -10,18 +13,18 @@
 ![g1](g2.gif)
 
 
-
-
 ## Stand-Ups / Milestones
 - [x] (Design) Wireframes
+- [x] (Design) Zeplin components
 - [x] (Native) Create boilerplate w rotating map
 - [x] (Backend) Connect double segmented market to non-relational database
 - [ ] (Native) Implement Apple Calnder and Apple Map transitions
 
 ## Roadblocks Overcame
-- **Merge conflicts** with differnt pod folders in different branches (SOLVED!!!). 
-- Async, delegate and protacol calls
-- Using GPX to test custom locations worldwide. 
+- **Pull Requests** with differnt pod folders and stroyboard edits in different branches
+- **Async calls** View Controller life cycle order of call between delegate and protocol methods 
+- **Geofence Limitation** Apple Places a limatation on tracking 20 physical barriers at a time
+    - We came up w an algorithim that works around that limitation w/o eating the battery
 
 ## Useful Links
 - [git ignore + storyboard merge conflict resolves](https://guides.codepath.com/ios/Using-Git-with-Terminal)
