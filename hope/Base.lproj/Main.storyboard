@@ -138,6 +138,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ma9-Og-XNg" id="7Mq-4j-ITS"/>
+                                    <outlet property="delegate" destination="Ma9-Og-XNg" id="ZgD-pv-LuP"/>
+                                </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-tz-B8f">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
@@ -225,17 +229,20 @@
                     <tabBarItem key="tabBarItem" title="" image="user" id="a4Q-Qp-KCX"/>
                     <connections>
                         <outlet property="numEventsLabel" destination="GWP-6g-Us2" id="k8y-n7-Scr"/>
+                        <outlet property="tableView" destination="BSs-zG-jQp" id="p6A-K2-1yp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsP-ZW-mXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="847.53694581280797"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Ni6-0o-sMG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lkc-AA-Jxc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oKG-n0-Def"/>
+                    <tabBarItem key="tabBarItem" title="" image="mapMarkedAlt" id="oKG-n0-Def">
+                        <inset key="landscapeImageInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jn2-Qw-37e">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -253,6 +260,7 @@
     </scenes>
     <resources>
         <image name="img" width="192" height="192"/>
+        <image name="mapMarkedAlt" width="27" height="24"/>
         <image name="new 1" width="1125" height="2436"/>
         <image name="pen" width="14" height="14"/>
         <image name="plus" width="720" height="720"/>

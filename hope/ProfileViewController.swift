@@ -10,12 +10,17 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var events:[Event] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        events = createArray()
 
+//        tableView.delegate = self
+//        tableView.dataSource = self
         
     }
     
@@ -39,5 +44,24 @@ class ProfileViewController: UIViewController {
     
 
     
+}
 
+extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
+        return events.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let event = events[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventsViewCell") as! EventsViewCell
+        
+        cell.setEvent(event: event)
+        
+        return cell
+        
+        
+    }
+    
 }
