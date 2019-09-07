@@ -9,16 +9,16 @@
 import UIKit
 
 class EventsViewCell: UITableViewCell {
-    
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     
-    func setEvent(event: Event) {
+    func setEvents(event: Event) {
         eventImageView.image = event.image
         dateLabel.text = event.date
         dayLabel.text = event.day
     }
+    
     
     
 }

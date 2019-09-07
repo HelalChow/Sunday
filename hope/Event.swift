@@ -20,3 +20,12 @@ class Event {
         self.day = day
     }
 }
+
+//dummy varaibles
+extension Event {
+    static let e1 = Event(image: UIImage(named: "3-3") ?? UIImage(), date: "8", day: "Mon")
+    static let e2 = Event(image: UIImage(named: "3-2") ?? UIImage(), date: "15", day: "Tue")
+    static let e3 = Event(image: UIImage(named: "3-1") ?? UIImage(), date: "29", day: "Sun")
+    static let e4 = Event(image: UIImage(named: "3") ?? UIImage(), date: "14", day: "Mon")
+}
+
