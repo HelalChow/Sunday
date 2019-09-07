@@ -10,11 +10,10 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = title
+//        label.text = title
 
         // Do any additional setup after loading the view.
     }
@@ -30,4 +29,8 @@ class DetailsViewController: UIViewController {
     }
     */
 
+    
+    @IBOutlet weak var jobDetailImageView: UIImageView!
+    
+    
 }
