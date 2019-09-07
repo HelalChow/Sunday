@@ -7,27 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		7C8F7AA02323E3A100F9DEFA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F7A9F2323E3A100F9DEFA /* DetailsViewController.swift */; };
-
 		1BFD291B2323D19F002B202D /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD291A2323D19F002B202D /* EventsViewCell.swift */; };
 		1BFD291D2323D8CE002B202D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD291C2323D8CE002B202D /* Event.swift */; };
-
+		7C8F7AA02323E3A100F9DEFA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F7A9F2323E3A100F9DEFA /* DetailsViewController.swift */; };
 		7CD309412323A08500730F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD309402323A08500730F8C /* AppDelegate.swift */; };
 		7CD309462323A08500730F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD309442323A08500730F8C /* Main.storyboard */; };
 		7CD309482323A08700730F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD309472323A08700730F8C /* Assets.xcassets */; };
 		7CD3094B2323A08700730F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD309492323A08700730F8C /* LaunchScreen.storyboard */; };
 		7CD309532323A24F00730F8C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD309522323A24F00730F8C /* MapViewController.swift */; };
 		7CD309552323A25A00730F8C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD309542323A25A00730F8C /* ProfileViewController.swift */; };
+		9693F2D13BE5313FD021B76A /* Pods_hope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B48823D2D589ADF83DFCAA /* Pods_hope.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-
-		7C8F7A9F2323E3A100F9DEFA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-
 		1BFD291A2323D19F002B202D /* EventsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
 		1BFD291C2323D8CE002B202D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-
+		42B48823D2D589ADF83DFCAA /* Pods_hope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		592CACCB6EF71AE6E2F83623 /* Pods-hope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hope.debug.xcconfig"; path = "Target Support Files/Pods-hope/Pods-hope.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8F7A9F2323E3A100F9DEFA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		7CD3093D2323A08500730F8C /* hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD309402323A08500730F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD309452323A08500730F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +33,7 @@
 		7CD3094C2323A08700730F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD309522323A24F00730F8C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7CD309542323A25A00730F8C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7D22603FCCA116EF973A546D /* Pods-hope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hope.release.xcconfig"; path = "Target Support Files/Pods-hope/Pods-hope.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9693F2D13BE5313FD021B76A /* Pods_hope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759FDEC8F4CA8E2B57F08B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42B48823D2D589ADF83DFCAA /* Pods_hope.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CD309342323A08500730F8C = {
 			isa = PBXGroup;
 			children = (
 				7CD3093F2323A08500730F8C /* hope */,
 				7CD3093E2323A08500730F8C /* Products */,
+				9DDF4B525875970EA1E3A884 /* Pods */,
+				759FDEC8F4CA8E2B57F08B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +91,15 @@
 			path = hope;
 			sourceTree = "<group>";
 		};
+		9DDF4B525875970EA1E3A884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				592CACCB6EF71AE6E2F83623 /* Pods-hope.debug.xcconfig */,
+				7D22603FCCA116EF973A546D /* Pods-hope.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CD3094F2323A08700730F8C /* Build configuration list for PBXNativeTarget "hope" */;
 			buildPhases = (
+				F846B443877167FFB194F0EC /* [CP] Check Pods Manifest.lock */,
 				7CD309392323A08500730F8C /* Sources */,
 				7CD3093A2323A08500730F8C /* Frameworks */,
 				7CD3093B2323A08500730F8C /* Resources */,
+				6F915DCF345C942E2268F56A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +168,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F915DCF345C942E2268F56A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hope/Pods-hope-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlyoverKit/FlyoverKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlyoverKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hope/Pods-hope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F846B443877167FFB194F0EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CD309392323A08500730F8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -156,12 +223,9 @@
 				7CD309552323A25A00730F8C /* ProfileViewController.swift in Sources */,
 				7CD309412323A08500730F8C /* AppDelegate.swift in Sources */,
 				7CD309532323A24F00730F8C /* MapViewController.swift in Sources */,
-
 				7C8F7AA02323E3A100F9DEFA /* DetailsViewController.swift in Sources */,
-
 				1BFD291B2323D19F002B202D /* EventsViewCell.swift in Sources */,
 				1BFD291D2323D8CE002B202D /* Event.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +369,7 @@
 		};
 		7CD309502323A08700730F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592CACCB6EF71AE6E2F83623 /* Pods-hope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +388,7 @@
 		};
 		7CD309512323A08700730F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D22603FCCA116EF973A546D /* Pods-hope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,7 +10,6 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,4 +29,8 @@ class DetailsViewController: UIViewController {
     }
     */
 
+    
+    @IBOutlet weak var jobDetailImageView: UIImageView!
+    
+    
 }
