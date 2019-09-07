@@ -23,6 +23,8 @@ class MapViewController: UIViewController {
     
     func userLocationSetup(){
         locationManager.delegate = self
+        mapView.delegate = self
+        
         locationManager.requestAlwaysAuthorization() //we can ask this later
         locationManager.startUpdatingLocation()
         locationManager.distanceFilter = 100
@@ -38,7 +40,10 @@ class MapViewController: UIViewController {
         
         let timesSqaureAnnotation = MKPointAnnotation()
         timesSqaureAnnotation.title = "times sq"
+        timesSqaureAnnotation.subtitle = "This is some mor edeatails..."
         timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.758896, longitude: -73.9855)
+//        timesSqaureAnnotation
+//        timesSqaureAnnotation.canShowCall
         
         let empireStateAnnotation = MKPointAnnotation()
         empireStateAnnotation.title = "empire state"
@@ -49,8 +54,64 @@ class MapViewController: UIViewController {
         brooklynBridge.coordinate = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
         
         mapView.addAnnotation(timesSqaureAnnotation)
+        mapView.addAnnotation(empireStateAnnotation)
+        mapView.addAnnotation(brooklynBridge)
     }
 
+}
+
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        if !(annotation is MKPointAnnotation) {
+//            return nil
+//        }
+//
+//        let annotationIdentifier = "AnnotationIdentifier"
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
+//
+//        if annotationView == nil {
+//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+//            annotationView!.canShowCallout = true
+//        }
+//        else {
+//            annotationView!.annotation = annotation
+//        }
+//
+//        let pinImage = UIImage(named: "timessq")
+//        annotationView!.image = pinImage
+//
+////        annotationView?.leftCalloutAccessoryView
+//
+//        return annotationView
+        
+//        if annotation is MKUserLocation {
+//            return nil
+//        }
+
+        let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+
+        pin.canShowCallout = true
+        pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+
+        return pin
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        let annView = view.annotation
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
+            print("detals vc not founds")
+            return
+        }
+        
+//        detailVC.title = annView?.title ?? "not found"
+//        print("kjsdbjkhbfkjdf")
+//        let detailVC =" storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension MapViewController: CLLocationManagerDelegate {
@@ -59,9 +120,9 @@ extension MapViewController: CLLocationManagerDelegate {
         
         guard let latestLocation = locations.first else { return }
         
-//        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-//        let region = MKCoordinateRegion(center: latestLocation.coordinate, span: span)
-//        mapView.setRegion(region, animated: true)
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: latestLocation.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
         
         if currentCoordinate == nil{
             zoomIn(latestLocation.coordinate)
