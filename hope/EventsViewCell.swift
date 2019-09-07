@@ -9,23 +9,15 @@
 import UIKit
 
 class EventsViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-    
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     
+    func setEvents(event: Event) {
+        eventImageView.image = event.image
+        dateLabel.text = event.date
+        dayLabel.text = event.day
+    }
     
     
     
