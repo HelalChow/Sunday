@@ -5,8 +5,7 @@
 **Built With:** Swift, Xcode, Zeplin, Google Cloud Firebase
 
 
-## Video Walkthrough
-[Youtube link](shorturl.at/ntCR2)
+## [Video Walkthrough](https://drive.google.com/file/d/13j-njRUl-L3E42kVws_tj-nIkqRfXo3k/view)
 
 
 
