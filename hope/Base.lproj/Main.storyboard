@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
-        <!--Item-->
+        <!--Profile View Controller-->
         <scene sceneID="CF2-Iz-hLb">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" id="Ma9-Og-XNg" customClass="ProfileViewController" customModule="hope" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zQf-ok-RCo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="a4Q-Qp-KCX"/>
+                    <tabBarItem key="tabBarItem" title="" image="user" id="a4Q-Qp-KCX"/>
                     <connections>
                         <outlet property="numEventsLabel" destination="GWP-6g-Us2" id="k8y-n7-Scr"/>
                     </connections>
@@ -204,5 +204,6 @@
         <image name="pen" width="14" height="14"/>
         <image name="plus" width="720" height="720"/>
         <image name="profileBackground" width="375" height="207"/>
+        <image name="user" width="20" height="23"/>
     </resources>
 </document>
