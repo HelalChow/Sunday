@@ -23,8 +23,8 @@ class EventsViewCell: UITableViewCell {
 
     
     @IBOutlet weak var eventImageView: UIImageView!
-    
-    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
     
     
     
