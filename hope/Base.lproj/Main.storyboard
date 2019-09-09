@@ -56,6 +56,9 @@
                                     <color key="titleColor" red="0.50533828445521911" green="0.77670923223350252" blue="0.56942496999324999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ma9-Og-XNg" kind="showDetail" id="aEb-7y-fS9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,6 +233,11 @@
                                 <rect key="frame" x="63" y="75" width="264" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29c-iZ-BDi">
+                                <rect key="frame" x="33" y="37" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zQf-ok-RCo"/>
@@ -237,13 +245,11 @@
                     <tabBarItem key="tabBarItem" title="" image="user" id="a4Q-Qp-KCX"/>
                     <connections>
                         <outlet property="eventTableView" destination="BSs-zG-jQp" id="O6N-vM-eQ1"/>
-                        <outlet property="numEventsLabel" destination="GWP-6g-Us2" id="k8y-n7-Scr"/>
-                        <outlet property="tableView" destination="BSs-zG-jQp" id="p6A-K2-1yp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsP-ZW-mXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="847.53694581280797"/>
+            <point key="canvasLocation" x="2881" y="849"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ni6-0o-sMG">
@@ -276,4 +282,7 @@
         <image name="profileBackground" width="375" height="207"/>
         <image name="user" width="20" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aEb-7y-fS9"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_hope {
+  umbrella header "Pods-hope-umbrella.h"
+
+  export *
+  module * { export * }
+}

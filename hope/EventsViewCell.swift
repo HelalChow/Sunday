@@ -17,6 +17,7 @@ class EventsViewCell: UITableViewCell {
         eventImageView.image = event.image
         dateLabel.text = event.date
         dayLabel.text = event.day
+        print("1000")
     }
     
     

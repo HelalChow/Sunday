@@ -7,27 +7,43 @@
 //
 
 import UIKit
+import UserNotifications
+
 
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var eventTableView: UITableView!
-    @IBOutlet weak var numEventsLabel: UILabel!
+//    @IBOutlet weak var numEventsLabel: UILabel!
     
     var events: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        events = createArray()
         eventTableView.delegate = self
         eventTableView.dataSource = self
+        events = createArray()
+        
     }
     
     func createArray() -> [Event] {
         let tempBool: [Event] = [Event.e1, Event.e2, Event.e3, Event.e4]
+        print("1")
         return tempBool
         
     }
+    
+//    @IBAction func createBool(segue:UIStoryboardSegue) {
+//        let addBoolVC = segue.source as! AddBoolViewController
+////        guard let destination: MKPlacemark = addBoolVC.boolLocation else { return }
+//        
+//        let newBool = Bools(suggester: "add bool meet at", time: destination.name ?? "", likes: 7)
+//        
+//        newBool.destination = destination
+//        
+//        boolList.append(newBool)
+//        boolTableView.reloadData()
+//    }
+
     
     
 }
@@ -39,8 +55,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let event = events[indexPath.row]
+        print("10")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell") as! EventsViewCell
+        print("100")
         
         cell.setEvents(event: event)
         

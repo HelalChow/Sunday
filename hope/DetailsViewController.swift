@@ -9,7 +9,8 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    @IBOutlet weak var registerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
