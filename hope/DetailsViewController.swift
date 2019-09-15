@@ -38,7 +38,7 @@ class DetailsViewController: UIViewController {
     @IBAction func registerClicked(_ sender: Any) {
         let eventStore:EKEventStore = EKEventStore()
         
-        eventStore.requestAccess(to: .event, completion: {(granted, error) in
+        eventStore.requestAccess(to: .event) {(granted, error) in
             if (granted) && (error) == nil
             {
                 print("granted \(granted)")
@@ -46,9 +46,21 @@ class DetailsViewController: UIViewController {
                 
                 let event:EKEvent = EKEvent(eventStore: eventStore)
                 event.title = "Hurricane Dorian Clothing Drive"
-                event.startDate = Data()
+                event.startDate = Date()
+                event.endDate = Date()
+                event.notes = ""
+                event.calendar = eventStore.defaultCalendarForNewEvents
+                do {
+                    try eventStore.save(event, span: .thisEvent)
+                } catch let error as NSError{
+                    print("error : \(error)")
+                }
+                print("Save Event")
+            } else{
+                print("error : \(error)")
             }
-        })
+            
+        }
     }
     
     
