@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EventKit
 
 class DetailsViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
@@ -32,6 +33,24 @@ class DetailsViewController: UIViewController {
 
     
     @IBOutlet weak var jobDetailImageView: UIImageView!
+    
+    
+    @IBAction func registerClicked(_ sender: Any) {
+        let eventStore:EKEventStore = EKEventStore()
+        
+        eventStore.requestAccess(to: .event, completion: {(granted, error) in
+            if (granted) && (error) == nil
+            {
+                print("granted \(granted)")
+                print("error \(error)")
+                
+                let event:EKEvent = EKEvent(eventStore: eventStore)
+                event.title = "Hurricane Dorian Clothing Drive"
+                event.startDate = Data()
+            }
+        })
+    }
+    
     
     
 }
