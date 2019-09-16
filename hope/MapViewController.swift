@@ -3,8 +3,9 @@
 //  hope
 //
 //  Created by Yasin Ehsan on 9/7/19.
-//  Copyright © 2019 Yasin Ehsan. All rights reserved.
+//  Copyright © 2019 Yasin Ehsan. All rights reserved
 //
+//Updte
 
 import UIKit
 import MapKit
@@ -111,17 +112,23 @@ extension MapViewController: MKMapViewDelegate {
 ////        annotationView?.leftCalloutAccessoryView
 //
 //        return annotationView
-        
+
 //        if annotation is MKUserLocation {
 //            return nil
 //        }
 
-        let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+//        let pin = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+        if annotation is MKUserLocation {
+            return nil
+        }
+        else{
+            let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
 
-        pin.canShowCallout = true
-        pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            pin.canShowCallout = true
+            pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
 
-        return pin
+            return pin
+        }
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

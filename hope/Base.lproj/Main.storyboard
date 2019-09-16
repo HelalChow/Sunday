@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,6 +57,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="registerClicked:" destination="7Dn-UL-5iY" eventType="touchUpInside" id="KEt-9d-59P"/>
                                     <segue destination="Ma9-Og-XNg" kind="showDetail" id="aEb-7y-fS9"/>
                                 </connections>
                             </button>
@@ -248,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsP-ZW-mXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2881" y="849"/>
+            <point key="canvasLocation" x="2880.8000000000002" y="848.27586206896558"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ni6-0o-sMG">
