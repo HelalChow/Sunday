@@ -10,7 +10,7 @@ import UIKit
 import EventKit
 import MapKit
 
-class DetailsViewController: UIViewController {
+class DetailsViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
@@ -42,7 +42,7 @@ class DetailsViewController: UIViewController {
     */
 
     
-    
+    let map = MapViewController()
     
     @IBOutlet weak var jobDetailImageView: UIImageView!
     
@@ -97,9 +97,15 @@ class DetailsViewController: UIViewController {
                 return
             }
             let route = directionResponse.routes[0]
-            self.mapView.add
+            self.map.mapView.addOverlay(route.polyline, level: .aboveRoads)
+            
+            let rect = route.polyline.boundingMapRect
+            self.map.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
         }
-        
+        self.map.mapView.delegate = self
     }
+    
+    
+    
     
 }
