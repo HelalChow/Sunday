@@ -17,6 +17,8 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         
         
+        
+        
 //        label.text = title
 
         // Do any additional setup after loading the view.
@@ -27,6 +29,7 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
         let map = MapViewController()
         
         guard var coordinate = map.currentCoordinate else { return home}
+        return coordinate
         
     }
     
@@ -77,32 +80,33 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBAction func routeClicked(_ sender: Any) {
-        let sourceLocation = getLocation()
-        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
-        
-        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
-        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
-        
-        let directionRequest = MKDirections.Request()
-        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
-        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
-        directionRequest.transportType = .automobile
-        
-        let directions = MKDirections(request: directionRequest)
-        directions.calculate {(response, error) in
-            guard let directionResponse = response else {
-                if let error = error{
-                    print("There was an error getting directions==\(error.localizedDescription)")
-                }
-                return
-            }
-            let route = directionResponse.routes[0]
-            self.map.mapView.addOverlay(route.polyline, level: .aboveRoads)
-            
-            let rect = route.polyline.boundingMapRect
-            self.map.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-        }
-        self.map.mapView.delegate = self
+//        let sourceLocation = getLocation()
+//        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+//
+//        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
+//        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+//
+//        let directionRequest = MKDirections.Request()
+//        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
+//        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
+//        directionRequest.transportType = .automobile
+//
+//        let directions = MKDirections(request: directionRequest)
+//        directions.calculate {(response, error) in
+//            guard let directionResponse = response else {
+//                if let error = error{
+//                    print("There was an error getting directions==\(error.localizedDescription)")
+//                }
+//                return
+//            }
+//            let route = directionResponse.routes[0]
+//            self.map.mapView.addOverlay(route.polyline, level: .aboveRoads)
+//
+//            let rect = route.polyline.boundingMapRect
+//            self.map.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        }
+//
+//        self.map.mapView.delegate = self
     }
     
     
