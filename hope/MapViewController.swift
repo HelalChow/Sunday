@@ -41,8 +41,6 @@ class MapViewController: UIViewController {
     
     
     func userLocationSetup(){
-        
-        
         locationManager.requestAlwaysAuthorization() //we can ask this later
         locationManager.startUpdatingLocation()
         locationManager.distanceFilter = 100
@@ -73,7 +71,7 @@ class MapViewController: UIViewController {
         brooklynBridge.coordinate = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
         
         let prospectPark = MKPointAnnotation()
-        prospectPark.title = "Hurricane Dorian Clothing Drive"
+        prospectPark.title = "Feed The Homeless Soup Kitchen"
         prospectPark.coordinate = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
         
         let jersey = MKPointAnnotation()
@@ -167,6 +165,7 @@ extension MapViewController: CLLocationManagerDelegate {
         
         currentCoordinate = latestLocation.coordinate
         
-        
     }
 }
+
+

@@ -8,6 +8,7 @@
 
 import UIKit
 import EventKit
+import MapKit
 
 class DetailsViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
@@ -15,9 +16,18 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
 //        label.text = title
 
         // Do any additional setup after loading the view.
+    }
+    
+    func getLocation() -> CLLocationCoordinate2D {
+        let home = CLLocationCoordinate2D(latitude: 40.6742, longitude: -73.8419)
+        let map = MapViewController()
+        
+        guard var coordinate = map.currentCoordinate else { return home}
+        
     }
     
 
@@ -31,6 +41,8 @@ class DetailsViewController: UIViewController {
     }
     */
 
+    
+    
     
     @IBOutlet weak var jobDetailImageView: UIImageView!
     
@@ -64,5 +76,9 @@ class DetailsViewController: UIViewController {
     }
     
     
+    @IBAction func routeClicked(_ sender: Any) {
+        let sourceLocation = getLocation()
+        
+    }
     
 }
