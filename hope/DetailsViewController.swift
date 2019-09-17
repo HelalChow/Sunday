@@ -83,6 +83,22 @@ class DetailsViewController: UIViewController {
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
         let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
         
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
+        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
+        directionRequest.transportType = .automobile
+        
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate {(response, error) in
+            guard let directionResponse = response else {
+                if let error = error{
+                    print("There was an error getting directions==\(error.localizedDescription)")
+                }
+                return
+            }
+            let route = directionResponse.routes[0]
+            self.mapView.add
+        }
         
     }
     
