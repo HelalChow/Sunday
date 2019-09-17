@@ -78,6 +78,11 @@ class DetailsViewController: UIViewController {
     
     @IBAction func routeClicked(_ sender: Any) {
         let sourceLocation = getLocation()
+        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        
+        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
+        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+        
         
     }
     
