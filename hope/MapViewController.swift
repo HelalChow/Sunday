@@ -168,8 +168,12 @@ extension MapViewController: CLLocationManagerDelegate {
     }
 }
 
-func setRegion(directionResponse: MKMapItem) {
-//    let route = directionResponse.rou
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
+    let renderer = MKPolylineRenderer(overlay: overlay)
+    renderer.strokeColor = UIColor.blue
+    renderer.lineWidth = 4.0
+    return renderer
 }
+
 
 
