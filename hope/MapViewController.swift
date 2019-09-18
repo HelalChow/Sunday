@@ -25,34 +25,6 @@ class MapViewController: UIViewController {
         userLocationSetup()
         self.mapSetup()
 
-        let sourceLocation = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
-        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
-
-        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
-        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
-
-        let directionRequest = MKDirections.Request()
-        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
-        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
-        directionRequest.transportType = .automobile
-
-        let directions = MKDirections(request: directionRequest)
-        directions.calculate {(response, error) in
-            guard let directionResponse = response else {
-                if let error = error{
-                    print("There was an error getting directions==\(error.localizedDescription)")
-                }
-                return
-            }
-            let route = directionResponse.routes[0]
-            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-
-            let rect = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-        }
-
-        self.mapView.delegate = self
-
     }
     
     
@@ -85,7 +57,6 @@ class MapViewController: UIViewController {
     }
     
     func addAnnotations(){
-        
         let timesSqaureAnnotation = MKPointAnnotation()
         timesSqaureAnnotation.title = "9/11 Day of Service"
         timesSqaureAnnotation.subtitle = "This is some mor edeatails..."
@@ -115,38 +86,56 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(prospectPark)
         mapView.addAnnotation(jersey)
     }
+    
+    func showRoute() {
+        let sourceLocation = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
+        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        
+        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
+        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+        
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
+        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
+        directionRequest.transportType = .automobile
+        
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate {(response, error) in
+            guard let directionResponse = response else {
+                if let error = error{
+                    print("There was an error getting directions==\(error.localizedDescription)")
+                }
+                return
+            }
+            let route = directionResponse.routes[0]
+            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+            
+            let rect = route.polyline.boundingMapRect
+            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+        }
+        
+        self.mapView.delegate = self
+
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 4.0
+        return renderer
+    }
+
 
 }
 
+
+
+
+
+
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        if !(annotation is MKPointAnnotation) {
-//            return nil
-//        }
-//
-//        let annotationIdentifier = "AnnotationIdentifier"
-//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
-//
-//        if annotationView == nil {
-//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-//            annotationView!.canShowCallout = true
-//        }
-//        else {
-//            annotationView!.annotation = annotation
-//        }
-//
-//        let pinImage = UIImage(named: "timessq")
-//        annotationView!.image = pinImage
-//
-////        annotationView?.leftCalloutAccessoryView
-//
-//        return annotationView
 
-//        if annotation is MKUserLocation {
-//            return nil
-//        }
-
-//        let pin = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "pin")
         if annotation is MKUserLocation {
             return nil
         }
@@ -155,35 +144,6 @@ extension MapViewController: MKMapViewDelegate {
 
             pin.canShowCallout = true
             pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            
-//            guard let sourceLocation = currentCoordinate else { return nil }
-//            let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
-//
-//            let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
-//            let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
-//
-//            let directionRequest = MKDirections.Request()
-//            directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
-//            directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
-//            directionRequest.transportType = .automobile
-//
-//            let directions = MKDirections(request: directionRequest)
-//            directions.calculate {(response, error) in
-//                guard let directionResponse = response else {
-//                    if let error = error{
-//                        print("There was an error getting directions==\(error.localizedDescription)")
-//                    }
-//                    return
-//                }
-//                let route = directionResponse.routes[0]
-//                self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-//
-//                let rect = route.polyline.boundingMapRect
-//                self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-//            }
-//
-//            self.mapView.delegate = self
-
             return pin
         }
     }
@@ -197,10 +157,7 @@ extension MapViewController: MKMapViewDelegate {
             print("detals vc not founds")
             return
         }
-        
-//        detailVC.title = annView?.title ?? "not found"
-//        print("kjsdbjkhbfkjdf")
-//        let detailVC =" storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+
         
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
@@ -227,12 +184,8 @@ extension MapViewController: CLLocationManagerDelegate {
     }
 }
 
-func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
-    let renderer = MKPolylineRenderer(overlay: overlay)
-    renderer.strokeColor = UIColor.blue
-    renderer.lineWidth = 4.0
-    return renderer
-}
+
+
 
 
 
