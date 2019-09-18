@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C8924DBC5BA35828D434659BBC2D22 /* Pods-hope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5BE39B3969747E04DD14FF8AAC9EF6 /* Pods-hope-dummy.m */; };
-		138A11CC94AE3ECD41BFE92E650240A0 /* FlyoverKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B29E1E46D3BF2D7F980B78EE8D5DB10F /* FlyoverKit-dummy.m */; };
-		264822193D631E99DD82044385833259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD41E1F994C49020AA84F5EA51DBABC5 /* UIKit.framework */; };
-		3370C0B67FDA59B2C504908CE756F4FF /* FlyoverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAFB0D62F15DAF7E7ED40362AD86CC /* FlyoverMapView.swift */; };
-		3628C81EADB3682E1CA3519CC6B32E1E /* Pods-hope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1639CDDE52A2CE9501749C7D737CEFE /* Pods-hope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4964125152C479EC498158AF594B8F6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A44E05F06F519AF365BEA1A0FB5E85E /* MapKit.framework */; };
-		4BFCD86FF4E406C18EAA0E7CD0E29754 /* FlyoverCamera+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6218B2FB895780C6172DF0BFC3DEBE /* FlyoverCamera+State.swift */; };
-		5FF4DF50B5CAB332AAA92C04ABA00366 /* FlyoverCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D37819BEEA0DA261B9E27616A3FF99 /* FlyoverCamera.swift */; };
-		639C16886D4E9DBCC3157208183BBC67 /* FlyoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341D85A313F8966EC283DA5784A882F /* FlyoverMapViewController.swift */; };
-		65B3BA955391D9E2E0A5D9C82FC7727F /* FlyoverAwesomePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD93F399070C3D330E64CB9EBA4DDF66 /* FlyoverAwesomePlace.swift */; };
-		6D1C1F129EA99DFFFEBD9CDDC9C8C311 /* Flyover+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0532FAA55606DB304C18ADD055ACEB /* Flyover+Operators.swift */; };
-		8A1D470EFF75FE53B8BD8C1CEB6EC011 /* FlyoverCamera+RegionChangeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E2D665F6BA15A16CC32730BAC2D5E /* FlyoverCamera+RegionChangeAnimation.swift */; };
-		9D7D2EC9EE1531D437BF8E3FD8B48EEF /* Flyover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C50C33BEDB2AEFAEFD63339ED7266 /* Flyover.swift */; };
-		CA781D6BDFD9758859694E76707CEFE1 /* FlyoverMapView+MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418E456DCB775BA00B5218DF32E4FED3 /* FlyoverMapView+MapType.swift */; };
-		D052087ACF8EE2ED960C80A3485D6DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E68691B433B3BA8D562757A8C989FD /* Foundation.framework */; };
-		D1B2476069C4F8C3936D38F16FD67245 /* FlyoverKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5360EB954E6079ED18C1C1A760885CA5 /* FlyoverKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8126CAEA689A3444D81E65B10386A4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E68691B433B3BA8D562757A8C989FD /* Foundation.framework */; };
-		ED319A10E5F8EF5BA0850B54D2DFDCF0 /* FlyoverCamera+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971846CE67F7BD618F2CA3F55B3025C9 /* FlyoverCamera+Configuration.swift */; };
+		04C8924DBC5BA35828D434659BBC2D22 /* Pods-hope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BCC19B23BE08B257BBF20ABAA98F32 /* Pods-hope-dummy.m */; };
+		13B8174C23D7FA813DE094604A647CBD /* FlyoverCamera+RegionChangeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127505A3B40A67A12F81667C5D49A8C /* FlyoverCamera+RegionChangeAnimation.swift */; };
+		1409AB588A851816EAD2E648983A37F9 /* FlyoverAwesomePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF6C0D9E11D4C96CDA1B76D087CC83 /* FlyoverAwesomePlace.swift */; };
+		3628C81EADB3682E1CA3519CC6B32E1E /* Pods-hope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9985C935750FDC95F562B2792335B171 /* Pods-hope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F03A76E06A0D5CAE07FD6ACEC709402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CCBCE02A078B27A4E4EBEFBA662217 /* UIKit.framework */; };
+		48A1D5F6ECD4C0EC84931413EFD3F6E8 /* FlyoverKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28253116E4663FEE7A08DEF90703C23E /* FlyoverKit-dummy.m */; };
+		4BCA701D54B629AC55B8CCB62B5E5D36 /* FlyoverCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F2CAC3ADED23F2FB10869ED3DDEB8 /* FlyoverCamera.swift */; };
+		5B7D210054A6C610E2BA52E633727873 /* Flyover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78281C7DDD60401A1CA21712AEEFCD22 /* Flyover.swift */; };
+		5C48C3990A5998B608D281598EA44327 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805A377FEB75EAD29F063A0A07513C3E /* MapKit.framework */; };
+		5EF3C1659DE5814FEACEC174FE042C6E /* FlyoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5336320B854040285AA10B8F1ABB9DD8 /* FlyoverMapViewController.swift */; };
+		9291E11016014E25DD4875A836A921A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FC5B64354078279927964A795D8D1C /* Foundation.framework */; };
+		AE07DBD3BB685BCB3E4737849C404101 /* FlyoverCamera+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561B0F708989B7F570DDCA390008089 /* FlyoverCamera+State.swift */; };
+		BDBE6326DD9526E535F0D0A135699E69 /* FlyoverCamera+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359D5FE2BDE28DE4B2A336156791D38 /* FlyoverCamera+Configuration.swift */; };
+		D052087ACF8EE2ED960C80A3485D6DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FC5B64354078279927964A795D8D1C /* Foundation.framework */; };
+		D1B2476069C4F8C3936D38F16FD67245 /* FlyoverKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC129E2EABD6DDE52E7AEE299FC1D2F1 /* FlyoverKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E1C701625B57EF2D6DABE402BADEBF /* Flyover+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800851231F9624B158A394431F763519 /* Flyover+Operators.swift */; };
+		EA8C656478F98586CB401B4C4FF0861A /* FlyoverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213C8414C4E85738673B90F3E2F15977 /* FlyoverMapView.swift */; };
+		EC247F830AE1D32708754513CD3C0FA1 /* FlyoverMapView+MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3231BA01BF25EC67A8292555E17CA /* FlyoverMapView+MapType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,43 +32,43 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 77C3901A83990F176CF25306E80357DC;
+			remoteGlobalIDString = B7785D9AF9CB89AC42FC7194B9D39325;
 			remoteInfo = FlyoverKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09EC338FB06069EDB4D4934DA7CDA121 /* Pods_hope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hope.framework; path = "Pods-hope.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F5BE39B3969747E04DD14FF8AAC9EF6 /* Pods-hope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hope-dummy.m"; sourceTree = "<group>"; };
-		17E68691B433B3BA8D562757A8C989FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		18D1B0D1045CCBBDC1E4A3A986F44D6D /* Pods-hope-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hope-Info.plist"; sourceTree = "<group>"; };
-		1D0532FAA55606DB304C18ADD055ACEB /* Flyover+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Flyover+Operators.swift"; path = "Sources/Flyover+Operators.swift"; sourceTree = "<group>"; };
-		202594EA293CFC145D8034B89C6C61AE /* Pods-hope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hope-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C45E4ADAF88874A2F5D924D5E645B8F /* Pods-hope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hope.modulemap"; sourceTree = "<group>"; };
-		3DEBCC274C7CDD076820A4A4540BA067 /* Pods-hope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hope-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FDAFB0D62F15DAF7E7ED40362AD86CC /* FlyoverMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverMapView.swift; path = Sources/MapView/FlyoverMapView.swift; sourceTree = "<group>"; };
-		418E456DCB775BA00B5218DF32E4FED3 /* FlyoverMapView+MapType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverMapView+MapType.swift"; path = "Sources/MapView/FlyoverMapView+MapType.swift"; sourceTree = "<group>"; };
-		5360EB954E6079ED18C1C1A760885CA5 /* FlyoverKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyoverKit-umbrella.h"; sourceTree = "<group>"; };
-		54CACD7B29903826630F4F44AE370146 /* Pods-hope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hope-frameworks.sh"; sourceTree = "<group>"; };
-		5D8C50C33BEDB2AEFAEFD63339ED7266 /* Flyover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flyover.swift; path = Sources/Flyover.swift; sourceTree = "<group>"; };
-		767614E8435101186B29DF1E300715B6 /* FlyoverKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyoverKit-prefix.pch"; sourceTree = "<group>"; };
-		8A44E05F06F519AF365BEA1A0FB5E85E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		971846CE67F7BD618F2CA3F55B3025C9 /* FlyoverCamera+Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+Configuration.swift"; path = "Sources/Camera/FlyoverCamera+Configuration.swift"; sourceTree = "<group>"; };
-		993B45C01C7DAA04AF4820A78A7275DF /* FlyoverKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlyoverKit-Info.plist"; sourceTree = "<group>"; };
-		9AC2384F18B635E3D42D8E56BAF9D234 /* FlyoverKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlyoverKit.modulemap; sourceTree = "<group>"; };
+		1ED3231BA01BF25EC67A8292555E17CA /* FlyoverMapView+MapType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverMapView+MapType.swift"; path = "Sources/MapView/FlyoverMapView+MapType.swift"; sourceTree = "<group>"; };
+		213C8414C4E85738673B90F3E2F15977 /* FlyoverMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverMapView.swift; path = Sources/MapView/FlyoverMapView.swift; sourceTree = "<group>"; };
+		26B3F55E57F969EA52A24147A99FE91C /* FlyoverKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyoverKit-prefix.pch"; sourceTree = "<group>"; };
+		28253116E4663FEE7A08DEF90703C23E /* FlyoverKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlyoverKit-dummy.m"; sourceTree = "<group>"; };
+		2C81D5045DBB3D0EC7EADA3F05F29C53 /* Pods-hope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hope.release.xcconfig"; sourceTree = "<group>"; };
+		3127505A3B40A67A12F81667C5D49A8C /* FlyoverCamera+RegionChangeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+RegionChangeAnimation.swift"; path = "Sources/Camera/FlyoverCamera+RegionChangeAnimation.swift"; sourceTree = "<group>"; };
+		318297E639CDFA090C4A37BF083BC66B /* Pods-hope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hope-frameworks.sh"; sourceTree = "<group>"; };
+		4EDB0A109CC31776E4F73C8E436F66CF /* Pods-hope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hope.modulemap"; sourceTree = "<group>"; };
+		51B831A30F20C1D62A725F880B498A02 /* Pods-hope-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hope-Info.plist"; sourceTree = "<group>"; };
+		5336320B854040285AA10B8F1ABB9DD8 /* FlyoverMapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverMapViewController.swift; path = Sources/MapView/FlyoverMapViewController.swift; sourceTree = "<group>"; };
+		58BCC19B23BE08B257BBF20ABAA98F32 /* Pods-hope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hope-dummy.m"; sourceTree = "<group>"; };
+		6561B0F708989B7F570DDCA390008089 /* FlyoverCamera+State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+State.swift"; path = "Sources/Camera/FlyoverCamera+State.swift"; sourceTree = "<group>"; };
+		70AB34AAE2E54863DD26C0A512754E95 /* Pods-hope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hope-acknowledgements.plist"; sourceTree = "<group>"; };
+		78281C7DDD60401A1CA21712AEEFCD22 /* Flyover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flyover.swift; path = Sources/Flyover.swift; sourceTree = "<group>"; };
+		800851231F9624B158A394431F763519 /* Flyover+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Flyover+Operators.swift"; path = "Sources/Flyover+Operators.swift"; sourceTree = "<group>"; };
+		805A377FEB75EAD29F063A0A07513C3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		864F2CAC3ADED23F2FB10869ED3DDEB8 /* FlyoverCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverCamera.swift; path = Sources/Camera/FlyoverCamera.swift; sourceTree = "<group>"; };
+		92EF6C0D9E11D4C96CDA1B76D087CC83 /* FlyoverAwesomePlace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverAwesomePlace.swift; path = Sources/AwesomePlace/FlyoverAwesomePlace.swift; sourceTree = "<group>"; };
+		9359D5FE2BDE28DE4B2A336156791D38 /* FlyoverCamera+Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+Configuration.swift"; path = "Sources/Camera/FlyoverCamera+Configuration.swift"; sourceTree = "<group>"; };
+		95D5CD85ED140424789D78EBE004EF70 /* Pods-hope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hope-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9985C935750FDC95F562B2792335B171 /* Pods-hope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hope-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EB9D29132EF6B8B34D16AF014126D8F /* FlyoverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlyoverKit.framework; path = FlyoverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F057915F82433F21225A0A55F4D0AA4 /* Pods-hope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hope.release.xcconfig"; sourceTree = "<group>"; };
-		B29E1E46D3BF2D7F980B78EE8D5DB10F /* FlyoverKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlyoverKit-dummy.m"; sourceTree = "<group>"; };
-		BD41E1F994C49020AA84F5EA51DBABC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BD93F399070C3D330E64CB9EBA4DDF66 /* FlyoverAwesomePlace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverAwesomePlace.swift; path = Sources/AwesomePlace/FlyoverAwesomePlace.swift; sourceTree = "<group>"; };
-		C341D85A313F8966EC283DA5784A882F /* FlyoverMapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverMapViewController.swift; path = Sources/MapView/FlyoverMapViewController.swift; sourceTree = "<group>"; };
-		DC73F6089DD23C3988EE1400006F5A99 /* Pods-hope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hope.debug.xcconfig"; sourceTree = "<group>"; };
-		E98E2D665F6BA15A16CC32730BAC2D5E /* FlyoverCamera+RegionChangeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+RegionChangeAnimation.swift"; path = "Sources/Camera/FlyoverCamera+RegionChangeAnimation.swift"; sourceTree = "<group>"; };
-		ED05CD7BD4E998AFBF043B7F7EFB29D1 /* FlyoverKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlyoverKit.xcconfig; sourceTree = "<group>"; };
-		F1639CDDE52A2CE9501749C7D737CEFE /* Pods-hope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hope-umbrella.h"; sourceTree = "<group>"; };
-		F5D37819BEEA0DA261B9E27616A3FF99 /* FlyoverCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlyoverCamera.swift; path = Sources/Camera/FlyoverCamera.swift; sourceTree = "<group>"; };
-		FF6218B2FB895780C6172DF0BFC3DEBE /* FlyoverCamera+State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlyoverCamera+State.swift"; path = "Sources/Camera/FlyoverCamera+State.swift"; sourceTree = "<group>"; };
+		B0CCBCE02A078B27A4E4EBEFBA662217 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5FC5B64354078279927964A795D8D1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF1DB3BD9C706E33F318A100EA0ED413 /* FlyoverKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlyoverKit.modulemap; sourceTree = "<group>"; };
+		C7342F41BD59ECA63CEDF1E977EE0FED /* FlyoverKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlyoverKit.xcconfig; sourceTree = "<group>"; };
+		C8E86F33BA7C3B0A0E7D22BF55CA5EEE /* Pods-hope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hope.debug.xcconfig"; sourceTree = "<group>"; };
+		CC129E2EABD6DDE52E7AEE299FC1D2F1 /* FlyoverKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyoverKit-umbrella.h"; sourceTree = "<group>"; };
+		ED536BADCF6A0F284443792E8B90481F /* FlyoverKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlyoverKit-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3728B96DF2E13556AB42F6EC678DA19 /* Frameworks */ = {
+		DBE59C9D057B72C938276318A6211C14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8126CAEA689A3444D81E65B10386A4A /* Foundation.framework in Frameworks */,
-				4964125152C479EC498158AF594B8F6A /* MapKit.framework in Frameworks */,
-				264822193D631E99DD82044385833259 /* UIKit.framework in Frameworks */,
+				9291E11016014E25DD4875A836A921A2 /* Foundation.framework in Frameworks */,
+				5C48C3990A5998B608D281598EA44327 /* MapKit.framework in Frameworks */,
+				3F03A76E06A0D5CAE07FD6ACEC709402 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 		02B7C73DA32626309A67F0D1C9755BD4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DF7148002323428B57A73361660F9943 /* Pods-hope */,
+				7A0C88EDEC702E4E687E91761CA1989F /* Pods-hope */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -104,60 +104,44 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C336DBC4D867A9A8DCEBF4A69691A81 /* iOS */,
+				47C35B7037A2EAAAB00727B6ADB6E35E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A55F0B028E1850437294EC0D959B84C /* Support Files */ = {
+		47C35B7037A2EAAAB00727B6ADB6E35E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9AC2384F18B635E3D42D8E56BAF9D234 /* FlyoverKit.modulemap */,
-				ED05CD7BD4E998AFBF043B7F7EFB29D1 /* FlyoverKit.xcconfig */,
-				B29E1E46D3BF2D7F980B78EE8D5DB10F /* FlyoverKit-dummy.m */,
-				993B45C01C7DAA04AF4820A78A7275DF /* FlyoverKit-Info.plist */,
-				767614E8435101186B29DF1E300715B6 /* FlyoverKit-prefix.pch */,
-				5360EB954E6079ED18C1C1A760885CA5 /* FlyoverKit-umbrella.h */,
+				B5FC5B64354078279927964A795D8D1C /* Foundation.framework */,
+				805A377FEB75EAD29F063A0A07513C3E /* MapKit.framework */,
+				B0CCBCE02A078B27A4E4EBEFBA662217 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FlyoverKit";
-			sourceTree = "<group>";
-		};
-		2CE450A6ADEA395FC1FC9438E858C596 /* FlyoverKit */ = {
-			isa = PBXGroup;
-			children = (
-				5D8C50C33BEDB2AEFAEFD63339ED7266 /* Flyover.swift */,
-				1D0532FAA55606DB304C18ADD055ACEB /* Flyover+Operators.swift */,
-				BD93F399070C3D330E64CB9EBA4DDF66 /* FlyoverAwesomePlace.swift */,
-				F5D37819BEEA0DA261B9E27616A3FF99 /* FlyoverCamera.swift */,
-				971846CE67F7BD618F2CA3F55B3025C9 /* FlyoverCamera+Configuration.swift */,
-				E98E2D665F6BA15A16CC32730BAC2D5E /* FlyoverCamera+RegionChangeAnimation.swift */,
-				FF6218B2FB895780C6172DF0BFC3DEBE /* FlyoverCamera+State.swift */,
-				3FDAFB0D62F15DAF7E7ED40362AD86CC /* FlyoverMapView.swift */,
-				418E456DCB775BA00B5218DF32E4FED3 /* FlyoverMapView+MapType.swift */,
-				C341D85A313F8966EC283DA5784A882F /* FlyoverMapViewController.swift */,
-				0A55F0B028E1850437294EC0D959B84C /* Support Files */,
-			);
-			name = FlyoverKit;
-			path = FlyoverKit;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4CA00C5DDED250663ABE85190069A8DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2CE450A6ADEA395FC1FC9438E858C596 /* FlyoverKit */,
+				D6EF0666A977BB93A125DE5417746DC6 /* FlyoverKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7C336DBC4D867A9A8DCEBF4A69691A81 /* iOS */ = {
+		7A0C88EDEC702E4E687E91761CA1989F /* Pods-hope */ = {
 			isa = PBXGroup;
 			children = (
-				17E68691B433B3BA8D562757A8C989FD /* Foundation.framework */,
-				8A44E05F06F519AF365BEA1A0FB5E85E /* MapKit.framework */,
-				BD41E1F994C49020AA84F5EA51DBABC5 /* UIKit.framework */,
+				4EDB0A109CC31776E4F73C8E436F66CF /* Pods-hope.modulemap */,
+				95D5CD85ED140424789D78EBE004EF70 /* Pods-hope-acknowledgements.markdown */,
+				70AB34AAE2E54863DD26C0A512754E95 /* Pods-hope-acknowledgements.plist */,
+				58BCC19B23BE08B257BBF20ABAA98F32 /* Pods-hope-dummy.m */,
+				318297E639CDFA090C4A37BF083BC66B /* Pods-hope-frameworks.sh */,
+				51B831A30F20C1D62A725F880B498A02 /* Pods-hope-Info.plist */,
+				9985C935750FDC95F562B2792335B171 /* Pods-hope-umbrella.h */,
+				C8E86F33BA7C3B0A0E7D22BF55CA5EEE /* Pods-hope.debug.xcconfig */,
+				2C81D5045DBB3D0EC7EADA3F05F29C53 /* Pods-hope.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-hope";
+			path = "Target Support Files/Pods-hope";
 			sourceTree = "<group>";
 		};
 		8A58B48158A4114F58B65656540B96FF /* Products */ = {
@@ -180,21 +164,37 @@
 			);
 			sourceTree = "<group>";
 		};
-		DF7148002323428B57A73361660F9943 /* Pods-hope */ = {
+		D6EF0666A977BB93A125DE5417746DC6 /* FlyoverKit */ = {
 			isa = PBXGroup;
 			children = (
-				2C45E4ADAF88874A2F5D924D5E645B8F /* Pods-hope.modulemap */,
-				3DEBCC274C7CDD076820A4A4540BA067 /* Pods-hope-acknowledgements.markdown */,
-				202594EA293CFC145D8034B89C6C61AE /* Pods-hope-acknowledgements.plist */,
-				0F5BE39B3969747E04DD14FF8AAC9EF6 /* Pods-hope-dummy.m */,
-				54CACD7B29903826630F4F44AE370146 /* Pods-hope-frameworks.sh */,
-				18D1B0D1045CCBBDC1E4A3A986F44D6D /* Pods-hope-Info.plist */,
-				F1639CDDE52A2CE9501749C7D737CEFE /* Pods-hope-umbrella.h */,
-				DC73F6089DD23C3988EE1400006F5A99 /* Pods-hope.debug.xcconfig */,
-				9F057915F82433F21225A0A55F4D0AA4 /* Pods-hope.release.xcconfig */,
+				78281C7DDD60401A1CA21712AEEFCD22 /* Flyover.swift */,
+				800851231F9624B158A394431F763519 /* Flyover+Operators.swift */,
+				92EF6C0D9E11D4C96CDA1B76D087CC83 /* FlyoverAwesomePlace.swift */,
+				864F2CAC3ADED23F2FB10869ED3DDEB8 /* FlyoverCamera.swift */,
+				9359D5FE2BDE28DE4B2A336156791D38 /* FlyoverCamera+Configuration.swift */,
+				3127505A3B40A67A12F81667C5D49A8C /* FlyoverCamera+RegionChangeAnimation.swift */,
+				6561B0F708989B7F570DDCA390008089 /* FlyoverCamera+State.swift */,
+				213C8414C4E85738673B90F3E2F15977 /* FlyoverMapView.swift */,
+				1ED3231BA01BF25EC67A8292555E17CA /* FlyoverMapView+MapType.swift */,
+				5336320B854040285AA10B8F1ABB9DD8 /* FlyoverMapViewController.swift */,
+				E58CD569997216FE91065C9CB51E3ECA /* Support Files */,
 			);
-			name = "Pods-hope";
-			path = "Target Support Files/Pods-hope";
+			name = FlyoverKit;
+			path = FlyoverKit;
+			sourceTree = "<group>";
+		};
+		E58CD569997216FE91065C9CB51E3ECA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DB3BD9C706E33F318A100EA0ED413 /* FlyoverKit.modulemap */,
+				C7342F41BD59ECA63CEDF1E977EE0FED /* FlyoverKit.xcconfig */,
+				28253116E4663FEE7A08DEF90703C23E /* FlyoverKit-dummy.m */,
+				ED536BADCF6A0F284443792E8B90481F /* FlyoverKit-Info.plist */,
+				26B3F55E57F969EA52A24147A99FE91C /* FlyoverKit-prefix.pch */,
+				CC129E2EABD6DDE52E7AEE299FC1D2F1 /* FlyoverKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlyoverKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +219,7 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		76265FE483E90B07F57C814DC32E4308 /* Pods-hope */ = {
+		5E922EEC020045AF9E56A8939E5585CA /* Pods-hope */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6BAF5214CE0558E61B4162A70256913 /* Build configuration list for PBXNativeTarget "Pods-hope" */;
 			buildPhases = (
@@ -238,13 +238,13 @@
 			productReference = 09EC338FB06069EDB4D4934DA7CDA121 /* Pods_hope.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		77C3901A83990F176CF25306E80357DC /* FlyoverKit */ = {
+		B7785D9AF9CB89AC42FC7194B9D39325 /* FlyoverKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 031E55C973033A100DC6D90522FEE217 /* Build configuration list for PBXNativeTarget "FlyoverKit" */;
 			buildPhases = (
 				B3ECA92456792DCE236EBF1227797DCF /* Headers */,
-				CEB04DFA97065BB53C5CC07DA275EFDF /* Sources */,
-				E3728B96DF2E13556AB42F6EC678DA19 /* Frameworks */,
+				35ED7570D776658B06C51463E5B298D1 /* Sources */,
+				DBE59C9D057B72C938276318A6211C14 /* Frameworks */,
 				21D464378A8E1E1DCFC3F38242C797DF /* Resources */,
 			);
 			buildRules = (
@@ -266,7 +266,7 @@
 				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -277,8 +277,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77C3901A83990F176CF25306E80357DC /* FlyoverKit */,
-				76265FE483E90B07F57C814DC32E4308 /* Pods-hope */,
+				B7785D9AF9CB89AC42FC7194B9D39325 /* FlyoverKit */,
+				5E922EEC020045AF9E56A8939E5585CA /* Pods-hope */,
 			);
 		};
 /* End PBXProject section */
@@ -301,29 +301,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35ED7570D776658B06C51463E5B298D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E1C701625B57EF2D6DABE402BADEBF /* Flyover+Operators.swift in Sources */,
+				5B7D210054A6C610E2BA52E633727873 /* Flyover.swift in Sources */,
+				1409AB588A851816EAD2E648983A37F9 /* FlyoverAwesomePlace.swift in Sources */,
+				BDBE6326DD9526E535F0D0A135699E69 /* FlyoverCamera+Configuration.swift in Sources */,
+				13B8174C23D7FA813DE094604A647CBD /* FlyoverCamera+RegionChangeAnimation.swift in Sources */,
+				AE07DBD3BB685BCB3E4737849C404101 /* FlyoverCamera+State.swift in Sources */,
+				4BCA701D54B629AC55B8CCB62B5E5D36 /* FlyoverCamera.swift in Sources */,
+				48A1D5F6ECD4C0EC84931413EFD3F6E8 /* FlyoverKit-dummy.m in Sources */,
+				EC247F830AE1D32708754513CD3C0FA1 /* FlyoverMapView+MapType.swift in Sources */,
+				EA8C656478F98586CB401B4C4FF0861A /* FlyoverMapView.swift in Sources */,
+				5EF3C1659DE5814FEACEC174FE042C6E /* FlyoverMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E6666F134BB27659BF4FD67AA610EA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04C8924DBC5BA35828D434659BBC2D22 /* Pods-hope-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEB04DFA97065BB53C5CC07DA275EFDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D1C1F129EA99DFFFEBD9CDDC9C8C311 /* Flyover+Operators.swift in Sources */,
-				9D7D2EC9EE1531D437BF8E3FD8B48EEF /* Flyover.swift in Sources */,
-				65B3BA955391D9E2E0A5D9C82FC7727F /* FlyoverAwesomePlace.swift in Sources */,
-				ED319A10E5F8EF5BA0850B54D2DFDCF0 /* FlyoverCamera+Configuration.swift in Sources */,
-				8A1D470EFF75FE53B8BD8C1CEB6EC011 /* FlyoverCamera+RegionChangeAnimation.swift in Sources */,
-				4BFCD86FF4E406C18EAA0E7CD0E29754 /* FlyoverCamera+State.swift in Sources */,
-				5FF4DF50B5CAB332AAA92C04ABA00366 /* FlyoverCamera.swift in Sources */,
-				138A11CC94AE3ECD41BFE92E650240A0 /* FlyoverKit-dummy.m in Sources */,
-				CA781D6BDFD9758859694E76707CEFE1 /* FlyoverMapView+MapType.swift in Sources */,
-				3370C0B67FDA59B2C504908CE756F4FF /* FlyoverMapView.swift in Sources */,
-				639C16886D4E9DBCC3157208183BBC67 /* FlyoverMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +333,7 @@
 		4454655840F25DBDDFA5F7D1F621430B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlyoverKit;
-			target = 77C3901A83990F176CF25306E80357DC /* FlyoverKit */;
+			target = B7785D9AF9CB89AC42FC7194B9D39325 /* FlyoverKit */;
 			targetProxy = 1068AA5AD733B55F9AD3B72ED5BE52C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,7 +341,7 @@
 /* Begin XCBuildConfiguration section */
 		04DC04DC512BADE845A057CEE1938EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED05CD7BD4E998AFBF043B7F7EFB29D1 /* FlyoverKit.xcconfig */;
+			baseConfigurationReference = C7342F41BD59ECA63CEDF1E977EE0FED /* FlyoverKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -378,7 +378,7 @@
 		};
 		37D87433A793E0200EDE67EC37E45850 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC73F6089DD23C3988EE1400006F5A99 /* Pods-hope.debug.xcconfig */;
+			baseConfigurationReference = C8E86F33BA7C3B0A0E7D22BF55CA5EEE /* Pods-hope.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -476,7 +476,7 @@
 		};
 		CB9C17E183371A9F116EE6BECFA1DC0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED05CD7BD4E998AFBF043B7F7EFB29D1 /* FlyoverKit.xcconfig */;
+			baseConfigurationReference = C7342F41BD59ECA63CEDF1E977EE0FED /* FlyoverKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -576,7 +576,7 @@
 		};
 		DBD6803C237939639097B49906DC4EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F057915F82433F21225A0A55F4D0AA4 /* Pods-hope.release.xcconfig */;
+			baseConfigurationReference = 2C81D5045DBB3D0EC7EADA3F05F29C53 /* Pods-hope.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
