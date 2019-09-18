@@ -39,6 +39,8 @@ class MapViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(100), execute:{
             camera.stop()
         })
+        
+//        showRoute()
     }
     
     
@@ -88,8 +90,8 @@ class MapViewController: UIViewController {
     }
     
     func showRoute() {
-        let sourceLocation = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
-        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        let sourceLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
         
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
         let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)

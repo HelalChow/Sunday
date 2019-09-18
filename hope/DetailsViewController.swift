@@ -80,7 +80,7 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBAction func routeClicked(_ sender: Any) {
-        map.showRoute()
+//        map.showRoute()
     }
     
     
