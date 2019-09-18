@@ -15,10 +15,6 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
 //        label.text = title
 
         // Do any additional setup after loading the view.
