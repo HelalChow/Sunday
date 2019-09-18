@@ -24,6 +24,7 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         userLocationSetup()
         self.mapSetup()
+//        showRoute()
 
     }
     
@@ -40,7 +41,7 @@ class MapViewController: UIViewController {
             camera.stop()
         })
         
-        showRoute()
+        
     }
     
     
@@ -90,7 +91,7 @@ class MapViewController: UIViewController {
     }
     
     func showRoute() {
-        let sourceLocation = CLLocationCoordinate2D(latitude: 40.6602, longitude: -73.9690)
+        let sourceLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
         let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
         
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
@@ -117,7 +118,6 @@ class MapViewController: UIViewController {
         }
         
         self.mapView.delegate = self
-
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
@@ -152,6 +152,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
+        showRoute()
         let annView = view.annotation
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -159,6 +160,7 @@ extension MapViewController: MKMapViewDelegate {
             print("detals vc not founds")
             return
         }
+       
 
         
         self.navigationController?.pushViewController(detailVC, animated: true)

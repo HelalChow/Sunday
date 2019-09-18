@@ -76,10 +76,43 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBAction func routeClicked(_ sender: Any) {
-//        map.showRoute()
+//        let sourceLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+//        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
+//
+//        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
+//        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+//
+//        let directionRequest = MKDirections.Request()
+//        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
+//        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
+//        directionRequest.transportType = .automobile
+//
+//        let directions = MKDirections(request: directionRequest)
+//        directions.calculate {(response, error) in
+//            guard let directionResponse = response else {
+//                if let error = error{
+//                    print("There was an error getting directions==\(error.localizedDescription)")
+//                }
+//                return
+//            }
+//            let route = directionResponse.routes[0]
+//            segue.mapView.addOverlay(route.polyline, level: .aboveRoads)
+//
+//            let rect = route.polyline.boundingMapRect
+//            segue.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        }
+//
+//        segue.mapView.delegate = self
+//
+//
     }
     
     
     
+        //       let detailVC = segue.mapView as! DetailsViewController
+     
+    
+//    _ sender: Any
+//    segue: MapViewController
     
 }
