@@ -35,7 +35,7 @@ class MapViewController: UIViewController {
         self.mapView.isZoomEnabled = true
         self.mapView.isScrollEnabled = true
         
-        let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 40000, pitch: 45.0, headingStep: 40.0))
+        let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 60000, pitch: 45.0, headingStep: 40.0))
         camera.start(flyover: FlyoverAwesomePlace.newYork)
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(100), execute:{
             camera.stop()
@@ -68,11 +68,11 @@ class MapViewController: UIViewController {
 //        timesSqaureAnnotation.canShowCall
         
         let empireStateAnnotation = MKPointAnnotation()
-        empireStateAnnotation.title = "Food Pantry Delivery"
+        empireStateAnnotation.title = "Hurricane Dorian Clothing Drive"
         empireStateAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
         
         let brooklynBridge = MKPointAnnotation()
-        brooklynBridge.title = "Hurricane Dorian Clothing Drive"
+        brooklynBridge.title = "Food Pantry Delivery"
         brooklynBridge.coordinate = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
         
         let prospectPark = MKPointAnnotation()
@@ -91,7 +91,7 @@ class MapViewController: UIViewController {
     }
     
     func showRoute() {
-        let sourceLocation = CLLocationCoordinate2D(latitude: 40.7061, longitude: -73.9969)
+        let sourceLocation = currentCoordinate ?? CLLocationCoordinate2D(latitude: 40.6742, longitude: -73.8418)
         let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
         
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
