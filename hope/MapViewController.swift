@@ -26,6 +26,9 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
     var currentCoordinate: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
         speechRecognizer?.delegate = self
         SFSpeechRecognizer.requestAuthorization {
             status in
@@ -51,7 +54,7 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
             }
         }
         
-        super.viewDidLoad()
+        
         locationManager.delegate = self
         mapView.delegate = self
         userLocationSetup()
@@ -101,7 +104,7 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
                 if inDictionary {
                     self.userInputLocation = self.locationDictionary[bestTranscription!]!
                 } else{
-                    self.userInputLocation = FlyoverAwesomePlace.newYorkStatueOfLiberty
+                    self.userInputLocation = FlyoverAwesomePlace.newYork
                 }
                 self.mapSetup()
             }
@@ -125,7 +128,6 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     
     @IBOutlet weak var locationButton: UIButton!
-    
     
     
     @IBAction func locationButtonClicked(_ sender: Any) {
@@ -153,8 +155,6 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(100), execute:{
             camera.stop()
         })
-        
-        
     }
     
     let locationDictionary = [
