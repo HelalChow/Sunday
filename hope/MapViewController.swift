@@ -11,8 +11,15 @@ import UIKit
 import MapKit
 import CoreLocation
 import FlyoverKit
+import Speech
 
 class MapViewController: UIViewController {
+    
+    var userInputLocation = FlyoverAwesomePlace.newYork
+    let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale.init(identifier: "en-us"))
+    var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    var recognitionTask: SFSpeechRecognitionTask?
+    let audioEngine = AVAudioEngine()
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()

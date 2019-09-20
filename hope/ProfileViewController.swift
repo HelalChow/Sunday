@@ -32,19 +32,6 @@ class ProfileViewController: UIViewController {
         
     }
     
-//    @IBAction func createBool(segue:UIStoryboardSegue) {
-//        let addBoolVC = segue.source as! AddBoolViewController
-////        guard let destination: MKPlacemark = addBoolVC.boolLocation else { return }
-//        
-//        let newBool = Bools(suggester: "add bool meet at", time: destination.name ?? "", likes: 7)
-//        
-//        newBool.destination = destination
-//        
-//        boolList.append(newBool)
-//        boolTableView.reloadData()
-//    }
-
-    
     
 }
 
