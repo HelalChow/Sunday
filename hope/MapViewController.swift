@@ -13,7 +13,7 @@ import CoreLocation
 import FlyoverKit
 import Speech
 
-class MapViewController: UIViewController, MKMapViewDelegate, SFSpeechRecognizerDelegate {
+class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     var userInputLocation = FlyoverAwesomePlace.newYork
     let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale.init(identifier: "en-us"))
