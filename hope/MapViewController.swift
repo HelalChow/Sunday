@@ -159,7 +159,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, SFSpeechRecognizer
     
     let locationDictionary = [
         "Statue of Liberty": FlyoverAwesomePlace.newYorkStatueOfLiberty,
-//        "Midtown New York": FlyoverAwesomePlace.centralParkNY,
+        "Midtown New York": FlyoverAwesomePlace.centralParkNY,
         "Golden Gate": FlyoverAwesomePlace.sanFranciscoGoldenGateBridge,
         "Miami": FlyoverAwesomePlace.miamiBeach,
         "Rome": FlyoverAwesomePlace.romeColosseum,
@@ -189,11 +189,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, SFSpeechRecognizer
     func addAnnotations(){
         let timesSqaureAnnotation = MKPointAnnotation()
         timesSqaureAnnotation.title = "9/11 Day of Service"
-        timesSqaureAnnotation.subtitle = "This is some mor edeatails..."
         timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.758896, longitude: -73.9855)
-//        timesSqaureAnnotation
-//        timesSqaureAnnotation.canShowCall
-        
+      
         let empireStateAnnotation = MKPointAnnotation()
         empireStateAnnotation.title = "Hurricane Dorian Clothing Drive"
         empireStateAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
@@ -209,12 +206,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, SFSpeechRecognizer
         let jersey = MKPointAnnotation()
         jersey.title = "It's My Park"
         jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
+//
+        let miami1 = MKPointAnnotation()
+        timesSqaureAnnotation.title = "National Beach Cleansing"
+        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 25.8098, longitude: -80.1300)
+        
+        let miami2 = MKPointAnnotation()
+        timesSqaureAnnotation.title = "Wildlife Protection Seminar"
+        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 25.7721, longitude: -80.1359)
+        
+        let miami3 = MKPointAnnotation()
+        timesSqaureAnnotation.title = "Canned Food Packaging"
+        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 25.8185, longitude: -80.2018)
+        
+        let miami4 = MKPointAnnotation()
+        timesSqaureAnnotation.title = "Refugee Emergency Care"
+        timesSqaureAnnotation.coordinate = CLLocationCoordinate2D(latitude: 25.7798, longitude: -80.1945)
         
         mapView.addAnnotation(timesSqaureAnnotation)
         mapView.addAnnotation(empireStateAnnotation)
         mapView.addAnnotation(brooklynBridge)
         mapView.addAnnotation(prospectPark)
         mapView.addAnnotation(jersey)
+        
+        mapView.addAnnotation(miami1)
+        mapView.addAnnotation(miami2)
+        mapView.addAnnotation(miami3)
+        mapView.addAnnotation(miami4)
     }
     
     func showRoute() {
