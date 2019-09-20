@@ -13,7 +13,7 @@ import CoreLocation
 import FlyoverKit
 import Speech
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, SFSpeechRecognizerDelegate {
     
     var userInputLocation = FlyoverAwesomePlace.newYork
     let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale.init(identifier: "en-us"))
@@ -26,6 +26,31 @@ class MapViewController: UIViewController {
     var currentCoordinate: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
+        speechRecognizer?.delegate = self
+        SFSpeechRecognizer.requestAuthorization {
+            status in
+            var buttonState = false
+            switch status {
+            case .authorized:
+                buttonState = true
+                print("Permission recieved")
+            case .denied:
+                buttonState = false
+                print("User did not grant permssion for speech recognition")
+            case .notDetermined:
+                buttonState = false
+                print("Speech recofgnition not allowed by user")
+            case .restricted:
+                buttonState = false
+                print("Speech recognition is not supported on this device")
+                
+            }
+            
+            DispatchQueue.main.async {
+                self.locationButton.isEnabled = buttonState
+            }
+        }
+        
         super.viewDidLoad()
         locationManager.delegate = self
         mapView.delegate = self
@@ -34,6 +59,21 @@ class MapViewController: UIViewController {
 //        showRoute()
 
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     func mapSetup() {
