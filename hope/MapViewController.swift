@@ -152,7 +152,7 @@ class MapViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 60000, pitch: 45.0, headingStep: 40.0))
         camera.start(flyover: FlyoverAwesomePlace.newYork)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(100), execute:{
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute:{
             camera.stop()
         })
     }
